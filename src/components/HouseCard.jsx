@@ -10,11 +10,11 @@ const HouseCard = ({ img }) => {
         className="rounded-xl object-cover hover:object-cover"
       />
       {/* className="rounded-xl object-cover hover:object-cover h-[265px] w-[260px]" */}
-      <div className="flex justify-between text-xs">
+      <div className="md:flex justify-between text-xs md:space-y-0 space-y-1">
         <p>Desert King</p>
         <p className="font-semibold">1MBT per night</p>
       </div>
-      <div className="flex justify-between text-xs">
+      <div className="lg:flex justify-between text-xs lg:space-y-0 space-y-1">
         <p>2345km away</p>
         <p>available for 2weeks stay</p>
       </div>

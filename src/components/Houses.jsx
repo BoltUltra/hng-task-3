@@ -3,11 +3,11 @@ import { HouseCard } from "./";
 
 const Houses = () => {
   return (
-    <div className="font-rr px-20 py-20">
-      <h3 className="font-bold text-5xl text-center">
+    <div className="font-rr lg:px-20 md:px-10 px-5 lg:py-20 md:py-10 py-5">
+      <h3 className="font-bold lg:text-5xl md:text-3xl text-lg text-center">
         Inspiration for your next adventure
       </h3>
-      <div className="pt-10 grid grid-cols-4 gap-7">
+      <div className="md:pt-10 pt-5 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:gap-7 md:gap-4 gap-2">
         <HouseCard img={"/house1.jpg"} />
         <HouseCard img={"/house2.jpg"} />
         <HouseCard img={"/house3.jpg"} />

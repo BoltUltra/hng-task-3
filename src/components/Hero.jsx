@@ -3,15 +3,15 @@ import React from "react";
 const Hero = () => {
   return (
     <main>
-      <div className="grid grid-cols-2 px-20 pt-20 pb-10 items-center">
+      <div className="grid md:grid-cols-2 lg:px-20 md:px-10 px-5 md:pt-20 pt-10 pb-10 items-center lg:gap-0 md:gap-3">
         <div className="font-rr space-y-7">
-          <p className="text-5xl leading-normal pr-7">
+          <p className="lg:text-5xl text-3xl md:text-left text-center leading-normal md:pr-7">
             Rent a <span className="text-primary font-bold">Place </span>
             away from
             <span className="text-primary font-bold"> Home</span> in the
             <span className="text-primary font-bold"> Metaverse</span>
           </p>
-          <p className="text-xl">
+          <p className="lg:text-xl md:text-base md:text-left text-center">
             we provide you access to luxury and affordable houses in the
             metaverse, get a chance to turn your imagination to reality at your
             comfort zone
@@ -28,7 +28,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex hero-images justify-center space-x-3">
+        <div className="md:flex hero-images justify-center space-x-3 hidden">
           <div className="space-y-3 mt-20">
             <img
               src="/heroimage2.jpg"

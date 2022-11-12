@@ -4,9 +4,9 @@ import { HouseCard } from "./";
 
 const Place = () => {
   return (
-    <div className="px-20 py-32 font-rr">
+    <div className="lg:px-20 md:px-10 px-5 py-32 font-rr">
       <div className="pb-10">
-        <ul className="flex items-center justify-between text-base">
+        <ul className="flex items-center justify-between text-base overflow-scroll">
           <li className="place transit">Restaurant</li>
           <li className="place transit">Cottage</li>
           <li className="place transit">Castle</li>
@@ -23,7 +23,8 @@ const Place = () => {
           </div>
         </ul>
       </div>
-      <div className="pt-10 grid grid-cols-4 gap-7">
+
+      <div className="md:pt-10 pt-5 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 md:gap-7 gap-2">
         <HouseCard img={"/place1.png"} />
         <HouseCard img={"/place2.png"} />
         <HouseCard img={"/place3.png"} />

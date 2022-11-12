@@ -2,15 +2,15 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white grid grid-cols-4 py-10 px-20">
-      <div className="md:flex flex-col justify-between">
-        <div className="flex items-center">
+    <footer className="bg-black text-white grid md:grid-cols-4 md:text-left text-center md:space-y-0 space-y-7 py-10 lg:px-20 md:px-10">
+      <div className="md:flex flex-col justify-between md:space-y-0 space-y-4">
+        <div className="flex items-center md:justify-start justify-center">
           <img src="/house-white.svg" alt="" />
-          <h1 className="text-4xl font-bold">Metabnb</h1>
+          <h1 className="lg:text-4xl text-2xl font-bold">Metabnb</h1>
         </div>
         <div className="">
           <div className="space-y-5">
-            <div className="flex text-white space-x-10">
+            <div className="flex text-white space-x-10 md:justify-start justify-center">
               <i className="fab fa-facebook-f"></i>
               <i className="fab fa-instagram"></i>
               <i className="fab fa-twitter"></i>

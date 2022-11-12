@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
-import { Add, ArrowRight2 } from "iconsax-react";
+import { Add, ArrowRight2, HambergerMenu } from "iconsax-react";
 
 const NavBar = () => {
   let [isOpen, setIsOpen] = useState(false);
@@ -15,14 +15,16 @@ const NavBar = () => {
   }
   return (
     <>
-      <header className="px-20 py-6 font-rr">
-        <navbar className="flex justify-between">
+      <header className="lg:px-20 md:px-10 px-5 py-6 font-rr">
+        <navbar className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
             <img src="/house.svg" alt="" />
-            <h1 className="text-4xl font-bold font-sans gradient">Metabnb</h1>
+            <h1 className="md:text-4xl text-2xl font-bold font-sans gradient">
+              Metabnb
+            </h1>
           </Link>
 
-          <ul className="flex items-center space-x-10 text-[#434343]">
+          <ul className="md:flex items-center lg:space-x-10 md:space-x-5 text-[#434343] hidden">
             <li>
               <Link to="/"> Home</Link>
             </li>
@@ -39,10 +41,13 @@ const NavBar = () => {
 
           <button
             onClick={openModal}
-            className="bg-primary text-white px-5 py-2 rounded-lg text-sm"
+            className="bg-primary text-white px-5 py-2 rounded-lg text-sm md:block hidden"
           >
             Connect Wallet
           </button>
+          <div className="md:hidden">
+            <HambergerMenu color="#A02279" variant="TwoTone" size={32} />
+          </div>
         </navbar>
       </header>
 
