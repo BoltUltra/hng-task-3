@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero, Brands, Houses } from "./";
+import { Hero, Brands, Houses, NFT } from "./";
 
 const Home = () => {
   return (
@@ -7,6 +7,7 @@ const Home = () => {
       <Hero />
       <Brands />
       <Houses />
+      <NFT />
     </main>
   );
 };

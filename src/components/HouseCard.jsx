@@ -7,8 +7,9 @@ const HouseCard = ({ img }) => {
       <img
         src={img}
         alt="house"
-        className="rounded-xl object-cover hover:object-cover h-[265px] w-[260px]"
+        className="rounded-xl object-cover hover:object-cover"
       />
+      {/* className="rounded-xl object-cover hover:object-cover h-[265px] w-[260px]" */}
       <div className="flex justify-between text-xs">
         <p>Desert King</p>
         <p className="font-semibold">1MBT per night</p>

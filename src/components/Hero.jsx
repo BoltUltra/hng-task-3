@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <main>
       <div className="grid grid-cols-2 px-20 pt-20 pb-10 items-center">
-        <div className="font-rr space-y-5">
+        <div className="font-rr space-y-7">
           <p className="text-5xl leading-normal pr-7">
             Rent a <span className="text-primary font-bold">Place </span>
             away from

@@ -7,3 +7,5 @@ export { default as HeartIcon } from "./HeartIcon";
 export { default as Brands } from "./Brands";
 export { default as HouseCard } from "./HouseCard";
 export { default as Houses } from "./Houses";
+export { default as NFT } from "./Nft";
+export { default as Modal } from "./Modal";
