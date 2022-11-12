@@ -17,10 +17,10 @@ const NavBar = () => {
     <>
       <header className="px-20 py-6 font-rr">
         <navbar className="flex justify-between">
-          <div className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img src="/house.svg" alt="" />
             <h1 className="text-4xl font-bold font-sans gradient">Metabnb</h1>
-          </div>
+          </Link>
 
           <ul className="flex items-center space-x-10 text-[#434343]">
             <li>
