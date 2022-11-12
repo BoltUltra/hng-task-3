@@ -2,7 +2,7 @@ import React from "react";
 
 const Nft = () => {
   return (
-    <div className="md:flex bg-primary lg:py-24 md:py-12 py-10 lg:px-20 md:px-10 items-center font-rr text-white md:space-y-0 space-y-5">
+    <div className="md:flex bg-primary lg:py-24 md:py-12 py-10 lg:px-20 md:px-10 px-5 items-center font-rr text-white md:space-y-0 space-y-5">
       <div className="md:w-[40%] md:space-y-10 space-y-6">
         <h3 className="font-bold lg:text-5xl md:text-4xl text-3xl md:text-left text-center">
           Metabnb NFTs
