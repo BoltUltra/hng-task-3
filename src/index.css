@@ -23,3 +23,11 @@
 .gradient {
   @apply text-transparent bg-clip-text bg-gradient-to-r from-[#DC3E88] to-[#843FE8];
 }
+
+.star {
+  @apply text-primary hover:scale-125 hover:text-gray-600 transition duration-200 ease-in-out;
+}
+
+.transit {
+  @apply hover:scale-105 transition transform duration-200 ease-out;
+}

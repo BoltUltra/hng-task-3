@@ -10,11 +10,12 @@ const Hero = () => {
     <>
       <button
         onClick={handleClick}
+        className="hover:scale-125 transition transform duration-200 ease-out"
       >
         <Heart
           size="24"
-          color={active ? "#ff0000" : "#ff0000"}
-          variant={active ? "Bold" : "Outline"}
+          color={active ? "#ff0000" : "#D7D7D7"}
+          variant="Bold"
         />
       </button>
     </>
