@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Add, ArrowRight2, HambergerMenu } from "iconsax-react";
 
 const NavBar = () => {
+  const [isClosed, setIsClosed] = useState(true);
   let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
@@ -13,10 +14,18 @@ const NavBar = () => {
   function openModal() {
     setIsOpen(true);
   }
+
+  function openMenu() {
+    setIsClosed(false);
+  }
+
+  function closeMenu() {
+    setIsClosed(true);
+  }
   return (
     <>
-      <header className="lg:px-20 md:px-10 px-5 py-6 font-rr">
-        <navbar className="flex justify-between items-center">
+      <header className="lg:px-20 md:px-10 py-6 font-rr">
+        <navbar className="flex justify-between items-center sticky top-0 bg-white md:px-0 px-5">
           <Link to="/" className="flex items-center">
             <img src="/house.svg" alt="" />
             <h1 className="md:text-4xl text-2xl font-bold font-sans gradient">
@@ -45,10 +54,48 @@ const NavBar = () => {
           >
             Connect Wallet
           </button>
-          <div className="md:hidden">
-            <HambergerMenu color="#A02279" variant="TwoTone" size={32} />
+          <div className="md:hidden flex">
+            <div onClick={openMenu} className={isClosed ? "block" : "hidden"}>
+              <HambergerMenu color="#A02279" variant="TwoTone" size={32} />
+            </div>
+
+            <div
+              className={isClosed ? "hidden" : "block rotate-45"}
+              onClick={closeMenu}
+            >
+              <Add color="#A02279" variant="TwoTone" size={32} />
+            </div>
           </div>
         </navbar>
+
+        {/* Mobile Nav */}
+        <div
+          className={
+            isClosed ? "hidden" : "block space-y-3 shadow-md py-5 px-5"
+          }
+        >
+          <ul className="space-y-3">
+            <li onClick={closeMenu}>
+              <Link to="/"> Home</Link>
+            </li>
+            <li onClick={closeMenu}>
+              <Link to="/place"> Place to stay</Link>
+            </li>
+            <li onClick={closeMenu}>
+              <Link to="/nfts"> NFTs</Link>
+            </li>
+            <li onClick={closeMenu}>
+              <Link to="/community"> Community</Link>
+            </li>
+          </ul>
+
+          <button
+            onClick={openModal}
+            className="bg-primary text-white px-5 py-2 rounded-lg text-sm"
+          >
+            Connect Wallet
+          </button>
+        </div>
       </header>
 
       <Transition appear show={isOpen} as={Fragment}>
