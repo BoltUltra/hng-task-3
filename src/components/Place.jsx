@@ -24,7 +24,7 @@ const Place = () => {
         </ul>
       </div>
 
-      <div className="md:pt-10 pt-5 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 md:gap-7 gap-2">
+      <div className="md:pt-10 pt-5 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-7 gap-4">
         <HouseCard img={"/place1.png"} />
         <HouseCard img={"/place2.png"} />
         <HouseCard img={"/place3.png"} />
